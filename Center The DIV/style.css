@@ -1,0 +1,44 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.parent-container {
+  height: 400px;
+  width: 400px;
+
+  background-color: rgb(255, 0, 98);
+  /* position: relative; */
+  /* display: flex;
+  align-items: center;
+  justify-content: center; */
+  /* display: grid;
+  place-items: center; */
+  /* display: grid;
+  justify-content: center;
+  align-items: center; */
+  display: flex;
+}
+
+.child-container {
+  height: 300px;
+  width: 300px;
+  background-color: rgb(0, 119, 254);
+  /* position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); */
+  margin: auto;
+
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

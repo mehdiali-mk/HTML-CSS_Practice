@@ -1,0 +1,39 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  height: 100vh;
+  width: 100vw;
+  background-color: #191825;
+  display: grid;
+  place-content: center;
+  font-family: Helvetica, sans-serif;
+}
+
+h1 {
+  font-size: 10rem;
+  font-weight: 900;
+  color: cyan;
+  text-transform: uppercase;
+  text-align: center;
+  animation: textFloat 2s linear infinite alternate;
+}
+
+@keyframes textFloat {
+  0% {
+    rotate: 15deg;
+  }
+  50% {
+    rotate: 0deg;
+  }
+  100% {
+    rotate: -15deg;
+  }
+}

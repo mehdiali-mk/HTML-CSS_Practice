@@ -1,0 +1,55 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+}
+
+body {
+  background-color: #191825;
+  height: 100vh;
+  display: grid;
+  place-items: center;
+}
+
+.loader {
+  width: 20rem;
+  aspect-ratio: 1;
+  background-color: cyan;
+  border-radius: 50%;
+  position: relative;
+  animation: loader 2s linear infinite reverse;
+}
+
+@keyframes loader {
+  100% {
+    rotate: 360deg;
+  }
+}
+
+.loader::before {
+  content: "";
+  width: 17rem;
+  aspect-ratio: 1;
+  background-color: #191825;
+  border-radius: 50%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  /* z-index: 1; */
+}
+
+.loader::after {
+  content: "";
+  width: 5rem;
+  aspect-ratio: 1;
+  background-color: cyan;
+  border-radius: 50%;
+  position: absolute;
+  top: -21px;
+  left: 60px;
+  box-shadow: 0 0 1rem cyan, 0 0 1.5rem cyan, 0 0 2rem cyan, 0 0 2.5rem cyan,
+    0 0 3rem cyan;
+}
