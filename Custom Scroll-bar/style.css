@@ -1,0 +1,53 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  background-color: #191825;
+}
+
+h2 {
+  font-size: 3rem;
+  font-weight: 600;
+  margin-bottom: 1.2rem;
+}
+
+p {
+  font-size: 1.8rem;
+}
+
+.section .card {
+  width: 70rem;
+  background-color: white;
+  color: #191825;
+  padding: 2rem;
+  margin: 2rem;
+  font-family: sans-serif;
+  line-height: 28px;
+  border-radius: 2rem;
+  -webkit-border-radius: 2rem;
+  -moz-border-radius: 2rem;
+  -ms-border-radius: 2rem;
+  -o-border-radius: 2rem;
+}
+
+/* Scroll Bar */
+::-webkit-scrollbar {
+  background-color: transparent;
+  width: 1rem;
+}
+
+::-webkit-scrollbar-thumb {
+  background-image: linear-gradient(#0093e9, #80d0c7);
+  border-radius: 10rem;
+  -webkit-border-radius: 10rem;
+  -moz-border-radius: 10rem;
+  -ms-border-radius: 10rem;
+  -o-border-radius: 10rem;
+}
