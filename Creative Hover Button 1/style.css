@@ -17,6 +17,8 @@ body {
   place-items: center;
 }
 
+/***** Button 1 *****/
+
 .button-1 {
   display: flex;
   align-items: center;
@@ -102,3 +104,173 @@ body {
   animation: focus 0s infinite linear;
   -webkit-animation: focus 0s infinite linear;
 }
+
+/***** End Button 1 *****/
+
+/***** Button 2 *****/
+
+.button-2 {
+  margin-top: 4.8rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2.4rem;
+  font-weight: 600;
+  background-color: transparent;
+  border: 0.2rem solid cyan;
+  text-decoration: none;
+  color: cyan;
+  padding: 1.2rem 3rem;
+  position: relative;
+}
+
+.button-2::before {
+  content: "Follow Me";
+  background-color: white;
+  color: #191825;
+  font-size: 2.4rem;
+  font-weight: 600;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transform: rotateX(270deg);
+  -webkit-transform: rotateX(270deg);
+  -moz-transform: rotateX(270deg);
+  -ms-transform: rotateX(270deg);
+  -o-transform: rotateX(270deg);
+  transform-origin: top;
+  transition: all 0.5s;
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  -ms-transition: all 0.5s;
+  -o-transition: all 0.5s;
+}
+
+.button-2::after {
+  content: "Follow Me";
+  background-color: cyan;
+  color: #191825;
+  font-size: 2.4rem;
+  font-weight: 600;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transform: rotateX(270deg);
+  -webkit-transform: rotateX(270deg);
+  -moz-transform: rotateX(270deg);
+  -ms-transform: rotateX(270deg);
+  -o-transform: rotateX(270deg);
+  transform-origin: top;
+  transition: all 0.5s;
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  -ms-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  transition-delay: 0.25s;
+}
+
+.button-2:hover::before,
+.button-2:hover::after {
+  transform: rotateX(0deg);
+  -webkit-transform: rotateX(0deg);
+  -moz-transform: rotateX(0deg);
+  -ms-transform: rotateX(0deg);
+  -o-transform: rotateX(0deg);
+}
+
+/***** End Button 2 *****/
+
+/***** Button 3 *****/
+
+.button-3 {
+  margin-top: 4.8rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2.4rem;
+  font-weight: 600;
+  background-color: transparent;
+  text-decoration: none;
+  background-color: transparent;
+  color: #191825;
+  padding: 2.4rem 3rem;
+  position: relative;
+}
+
+.button-3::before {
+  content: "Hover Me";
+  position: absolute;
+  top: -0.3rem;
+  left: -0.3rem;
+  width: 100%;
+  height: 100%;
+  background-color: cyan;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1;
+  transition: all 0.2s;
+  -webkit-transition: all 0.2s;
+  -moz-transition: all 0.2s;
+  -ms-transition: all 0.2s;
+  -o-transition: all 0.2s;
+  transform-origin: top;
+  /* mix-blend-mode: multiply; */
+}
+
+.button-3::after {
+  content: "";
+  position: absolute;
+  top: 0.3rem;
+  left: 0.3rem;
+  width: 100%;
+  height: 100%;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.2s;
+  -webkit-transition: all 0.2s;
+  -moz-transition: all 0.2s;
+  -ms-transition: all 0.2s;
+  -o-transition: all 0.2s;
+  transform-origin: bottom;
+}
+
+.button-3:hover::before {
+  content: "";
+  top: -0.6rem;
+  left: 0;
+  transform: perspective(100rem) rotateX(75deg);
+  -webkit-transform: perspective(100rem) rotateX(75deg);
+  -moz-transform: perspective(100rem) rotateX(75deg);
+  -ms-transform: perspective(100rem) rotateX(75deg);
+  -o-transform: perspective(100rem) rotateX(75deg);
+}
+.button-3:hover::after {
+  content: "";
+  color: cyan;
+  top: 0.6rem;
+  left: 0;
+  transform: perspective(100rem) rotateX(-75deg);
+  -webkit-transform: perspective(100rem) rotateX(-75deg);
+  -moz-transform: perspective(100rem) rotateX(-75deg);
+  -ms-transform: perspective(100rem) rotateX(-75deg);
+  -o-transform: perspective(100rem) rotateX(-75deg);
+}
+
+.button-3:hover {
+  color: cyan;
+}
+
+/***** End Button 3 *****/
