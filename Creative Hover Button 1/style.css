@@ -274,3 +274,141 @@ body {
 }
 
 /***** End Button 3 *****/
+
+/***** Button 4 *****/
+
+.button-4 {
+  margin-top: 4.8rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2.4rem;
+  font-weight: 600;
+  background-color: cyan;
+  text-decoration: none;
+  color: #191825;
+  padding: 1.2rem 3rem;
+  position: relative;
+}
+
+.button-4::before {
+  content: "";
+  height: 2rem;
+  width: 2rem;
+  border-top: 0.4rem solid cyan;
+  border-left: 0.4rem solid cyan;
+  background-color: transparent;
+  position: absolute;
+  top: -10px;
+  left: -10px;
+  transition: all 0.25s linear;
+  -webkit-transition: all 0.25s linear;
+  -moz-transition: all 0.25s linear;
+  -ms-transition: all 0.25s linear;
+  -o-transition: all 0.25s linear;
+}
+
+.button-4::after {
+  content: "";
+  height: 2rem;
+  width: 2rem;
+  border-bottom: 0.4rem solid cyan;
+  border-right: 0.4rem solid cyan;
+  background-color: transparent;
+  position: absolute;
+  bottom: -10px;
+  right: -10px;
+  transition: all 0.25s linear;
+  -webkit-transition: all 0.25s linear;
+  -moz-transition: all 0.25s linear;
+  -ms-transition: all 0.25s linear;
+  -o-transition: all 0.25s linear;
+}
+
+.button-4:hover::before,
+.button-4:hover::after {
+  /* height: 121%;
+  width: 110%; */
+  height: 100%;
+  width: 100%;
+}
+
+/***** End Button 4 *****/
+
+/***** Button 5 *****/
+
+.button-5 {
+  margin-top: 4.8rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2.4rem;
+  font-weight: 600;
+  background-color: cyan;
+  /*border: 0.2rem solid cyan;
+  */
+  border-radius: 100px;
+  text-decoration: none;
+  color: #191825;
+  padding: 1.2rem 3rem;
+  position: relative;
+  -webkit-border-radius: 100px;
+  -moz-border-radius: 100px;
+  -ms-border-radius: 100px;
+  -o-border-radius: 100px;
+  transition: all 0.4s linear;
+  -webkit-transition: all 0.4s linear;
+  -moz-transition: all 0.4s linear;
+  -ms-transition: all 0.4s linear;
+  -o-transition: all 0.4s linear;
+}
+
+.button-5::before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-radius: 100px;
+  -webkit-border-radius: 100px;
+  -moz-border-radius: 100px;
+  -ms-border-radius: 100px;
+  -o-border-radius: 100px;
+  transition: all 0.4s linear;
+  -webkit-transition: all 0.4s linear;
+  -moz-transition: all 0.4s linear;
+  -ms-transition: all 0.4s linear;
+  -o-transition: all 0.4s linear;
+  background-color: cyan;
+  z-index: -1;
+}
+
+.button-5:hover::before {
+  transform: scaleX(1.4) scaleY(1.6);
+  -webkit-transform: scaleX(1.4) scaleY(1.6);
+  -moz-transform: scaleX(1.4) scaleY(1.6);
+  -ms-transform: scaleX(1.4) scaleY(1.6);
+  -o-transform: scaleX(1.4) scaleY(1.6);
+  opacity: 0;
+}
+
+.button-5:hover {
+  transform: scaleX(-0.3rem);
+  -webkit-transform: scaleX(-0.3rem);
+  -moz-transform: scaleX(-0.3rem);
+  -ms-transform: scaleX(-0.3rem);
+  -o-transform: scaleX(-0.3rem);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.button-5:active {
+  transform: scaleX(-0.1rem);
+  -webkit-transform: scaleX(-0.1rem);
+  -moz-transform: scaleX(-0.1rem);
+  -ms-transform: scaleX(-0.1rem);
+  -o-transform: scaleX(-0.1rem);
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+/***** End Button 5 *****/
