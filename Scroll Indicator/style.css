@@ -1,0 +1,89 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+.background {
+  background-color: #191825;
+  padding: 5.2rem;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 5.2rem;
+}
+
+.text-block {
+  padding: 2.4rem;
+  border: 2px solid white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 75%;
+}
+
+.text-title {
+  font-size: 4.8rem;
+  color: cyan;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  margin-bottom: 2rem;
+}
+
+.text-paragraph {
+  font-size: 1.6rem;
+  color: white;
+  letter-spacing: 1px;
+  text-align: justify;
+}
+
+.scroll-indicator {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: 75%;
+  height: 4.8rem;
+  position: fixed;
+  background-color: #191825;
+  display: flex;
+  align-items: center;
+  transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
+  -moz-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  -o-transform: translateX(-50%);
+}
+
+.progress {
+  width: 0%;
+  height: 30%;
+  background-color: cyan;
+  border-radius: 100rem;
+  -webkit-border-radius: 100rem;
+  -moz-border-radius: 100rem;
+  -ms-border-radius: 100rem;
+  -o-border-radius: 100rem;
+  transition: width 0.1s;
+  -webkit-transition: width 0.1s;
+  -moz-transition: width 0.1s;
+  -ms-transition: width 0.1s;
+  -o-transition: width 0.1s;
+}
