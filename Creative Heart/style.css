@@ -36,6 +36,12 @@ body {
   -moz-transform: rotate(-45deg);
   -ms-transform: rotate(-45deg);
   -o-transform: rotate(-45deg);
+  transition: all 0.4s;
+  -webkit-transition: all 0.4s;
+  -moz-transition: all 0.4s;
+  -ms-transition: all 0.4s;
+  -o-transition: all 0.4s;
+  cursor: pointer;
 }
 
 .grey-heart::before,
@@ -50,6 +56,7 @@ body {
   -ms-border-radius: 100rem;
   -o-border-radius: 100rem;
   position: absolute;
+  transition: all 0.4s;
 }
 
 .grey-heart::before {
@@ -78,6 +85,7 @@ body {
   align-items: center;
   justify-content: center;
   visibility: hidden;
+  cursor: pointer;
 }
 
 .red-heart::after,
@@ -106,8 +114,8 @@ body {
 
 .red-heart.animation {
   background-color: #dc143c;
-  animation: pop 0.9s alternate;
-  -webkit-animation: pop 0.9s alternate;
+  animation: pop 1s alternate;
+  -webkit-animation: pop 1s alternate;
   visibility: visible;
 }
 
@@ -119,14 +127,19 @@ body {
   0% {
     background-color: #dc143c;
     visibility: visible;
+    scale: 1;
+    opacity: 0;
   }
-  100% {
+  50% {
+    scale: 1.2;
+  }
+  80% {
     transform: rotate(45deg);
     -webkit-transform: rotate(45deg);
     -moz-transform: rotate(45deg);
     -ms-transform: rotate(45deg);
     -o-transform: rotate(45deg);
-    scale: 1.7;
-    opacity: 0;
+    scale: 0.6;
+    opacity: 0.5;
   }
 }
