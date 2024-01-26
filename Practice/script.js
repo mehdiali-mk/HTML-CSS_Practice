@@ -19,7 +19,3 @@ function changePosition() {
     dotsEl[i].style.left = newXPosition[i] + "%";
   }
 }
-
-for (let i = 1; i <= 100; i++) {
-  changePosition(changePosition, 50);
-}
