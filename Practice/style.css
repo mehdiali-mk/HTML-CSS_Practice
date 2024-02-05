@@ -29,17 +29,17 @@ body {
 
 .dot {
   position: absolute;
-  width: 10px;
-  height: 10px;
+  width: 2px;
+  height: 2px;
   border-radius: 100rem;
   background-color: white;
   -webkit-border-radius: 100rem;
   -moz-border-radius: 100rem;
   -ms-border-radius: 100rem;
   -o-border-radius: 100rem;
-  transition: all 1s;
-  -webkit-transition: all 1s;
-  -moz-transition: all 1s;
-  -ms-transition: all 1s;
-  -o-transition: all 1s;
+  transition: all 2s;
+  -webkit-transition: all 2s;
+  -moz-transition: all 2s;
+  -ms-transition: all 2s;
+  -o-transition: all 2s;
 }

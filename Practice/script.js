@@ -14,8 +14,13 @@ function newPosition() {
 console.log(dotsEl);
 function changePosition() {
   newPosition();
-  for (let i = 0; i < 40; i++) {
+  for (let i = 0; i < 80; i++) {
     dotsEl[i].style.top = newYPosition[i] + "%";
     dotsEl[i].style.left = newXPosition[i] + "%";
   }
+  setTimeout(changePosition, 2000);
+}
+
+for (let i = 0; i <= 100; i++) {
+  changePosition();
 }
