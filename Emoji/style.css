@@ -21,6 +21,8 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
+  gap: 8rem;
 }
 
 .emoji {
@@ -62,7 +64,7 @@ body {
 .nav__social-link {
   font-size: 3.6rem;
   text-decoration: none;
-  color: var(--black-color);
+  color: white;
   transition: color 0.4s linear;
   -webkit-transition: color 0.4s linear;
   -moz-transition: color 0.4s linear;
